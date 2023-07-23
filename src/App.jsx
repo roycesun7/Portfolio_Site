@@ -1,24 +1,60 @@
-import React from 'react';
-import './App.css'; // Import custom CSS file
+import React, { useState, useEffect, useRef } from 'react';
+import Navbar from './components/Navbar.jsx'
+import ClearAnimation from './components/FlyAnimation.jsx'
+import Home from './pages/Home.jsx'
+import Experience from './pages/Experience.jsx'
+import Projects from './pages/Projects.jsx'
+import Contact from './pages/Contact.jsx'
 
-const Home = () => {
+
+function App() {
+  const [page, setPage] = useState(0)
+  const [animationActive, setAnimationActive] = useState(false)
+
+  const handlePageChange = (keyVal) => {
+    setAnimationActive(true)
+    
+    setTimeout(() => {
+      setPage(keyVal)
+    }, 500)
+
+    setTimeout(() => {
+      setAnimationActive(false)
+    }, 1200)
+
+  }
+
+  const myRef = useRef(null);
+
   return (
     <>
-        <h1 className="text-4xl mb-4">Welcome to My Website</h1>
-        <p className="text-lg">
-          This is a basic home screen of a Vite + React project with Tailwind CSS.
-          Feel free to customize and build upon it!
-        </p>
-    </>
-  );
-};
+    <div className='grid grid-cols-5'>
+      
 
-const App = () => {
-  return (
-    <div>
-      <Home />
+      <div className='col-span-4 relative' ref={myRef}>
+        {animationActive && <ClearAnimation />}
+
+        {(() => {
+          switch (page) {
+          case 0:
+            return <Home />
+          case 1:
+            return <Experience />
+          case 2:
+            return <Skills />
+          case 3:
+            return <Projects />
+          case 4:
+            return <Contact />
+        }})()}
+      </div>
+      {/* <div className="" > */}
+      <Navbar page={page} handleClick={handlePageChange}/>
+      {/* </div> */}
     </div>
-  );
-};
+    
+    </>
+  )
+}
 
-export default App;
+export default App
