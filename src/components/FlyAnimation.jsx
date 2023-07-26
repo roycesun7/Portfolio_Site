@@ -18,7 +18,8 @@ export default function FlyAnimation() {
       animate="animate"
       variants={animationVariants}
       transition={animationTransition}
-      className="fixed top-0 left-0 w-screen h-screen bg-white z-50"
+      className="fixed top-0 left-0 w-screen h-screen bg-indigo-400 z-50"
     />
   );
 }
+

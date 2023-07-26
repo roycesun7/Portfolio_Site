@@ -6,55 +6,79 @@ export default function Experience() {
     let experiences = [
       {
         id: 0,
-        title: "Stackend Solutions",
-        subtitle: "Software Engineer, Part Time Job",
-        date: "November 2022 - Present",
+        title: "LightBeam.ai",
+        subtitle: "AI/ML Engineer - Internship",
+        date: "May 2023 - August 2023",
         description: [
-          "Scraped over 100 websites and bypassed bot detection to gather data on potential leads for a client",
-          "Utilized the BeautifulSoup and Selenium libraries in Jupyter Notebooks for scraping",
-          "Developed a search tool in Metabase to filter sales leads based on type, location, and other fields"
+          "Implemented Microsoft’s Presidio SDK together with GPT-3 to autonomously analyze and anonymize personal identifiable information (PII) to protect client data",
+          "Managed firm's machine learning repository and contributed 500+ high-quality topic-based images for model training data by leveraging search engine scraping methodologies and data version control for Git (dvc)",
+          "Led ML dev team in designing efficient and scalable web scraping program (Python) to help firm train machine learning model for data categorization in privacy"
         ]
       },
+
       {
         id: 1,
-        title: "Quant @ Illinois",
-        subtitle: "Head of Trading",
-        date: "September 2022 - Present",
+        title: "Pallacanestro Trieste",
+        subtitle: "Data Analytics Consultant",
+        date: "June 2023 - August 2023",
         description: [
-          "Wrote sponsorship prospectus and helped bring in sponsors like IMC, Jump, Optiver, Citadel, DRW, and more",
-          "Led a project to develop accurate price ranges for a company’s share price based on several other companies in the same sector. The project was written in Python and is currently being backtested.",
-          "Worked on a project to predict the CPI as the basis for a volatility based options trading strategy"
+          "Leveraged data tools in Python to scrape, merge, and analyze LBA player data for Italian professional basketball team Trieste",
+          "Guided project team in designing and implementing a robust ELO strength measurement system + MA individualized player ranking model, customizing a novel data-driven player hiring strategy that maximized performance and competitiveness",
+          "Collaborated with team general manager and ownership weekly to communicate updates and directly influence player signings for enhanced team performance success"
         ]
       },
+
       {
         id: 2,
-        title: "OTCR Consulting",
-        subtitle: "Consultant",
-        date: "September 2022 - May 2023",
+        title: "Linguistics Data Consortium",
+        subtitle: "Analyst",
+        date: "December 2022 - Present",
         description: [
-          "Consulted for a construction based startup to find potential clients and analyze the overall market",
-          "Web scraped relevant data from various potential client’s websites to guide market research"
+          "Quantitatively analyzed speech patterns of patients with neurodegenerative disorders for a biomedical research initiative",
+          "Utilized transcription software to combine/transcribe high-volume audio files and analyze case patient data "
         ]
       },
+
+      {
+        id: 3,
+        title: "Sierra Project Foundation",
+        subtitle: "Director of Web Operations",
+        date: "August 2022 - August 2022",
+        description: [
+          "Managed the official website, implementing periodic updates to layout, coloring, and digital design based on outreach objective",
+          "Collaborated with a diverse team of college students as technical lead to publish international outreach efforts, fostering global health education and awareness"
+        ]
+      },
+
+      {
+        id: 4,
+        title: "IU School of Medicine",
+        subtitle: "Computational Researcher",
+        date: "June 2022 - January 2022",
+        description: [
+          "Modified and implemented NLSAM algorithm in Python for image denoising of diffusion-weighted MRI multi-shell brain scans",
+          "Collaborated with research team to produce analysis of Alzheimer’s diseased brains"
+        ]
+      },
+
     ]
 
     return (
-      <div className="h-screen bg-black relative w-screen pt-20">
-        <div className="flex">
-          <h1 className="text-black bg-white text-9xl py-5 px-7 rounded-br-xl">Experience</h1>
-        </div>
-    
-        <div className="flex justify-center mt-10">
-          <motion.div
-            className="w-4/5"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          >
+      <div className="h-screen bg-slate-700 relative w-screen pt-20">
+      <div className="flex justify-center mt-10">
+        <motion.div
+          className="w-4/5"
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+ 
+          <div className="max-h-screen overflow-y-auto">
             <Accordion experiences={experiences} />
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
-    );
+    </div>
+  );
     
   }

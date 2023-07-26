@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {BiDownArrow} from 'react-icons/bi'
+import {BiDownArrow, BiGasPump} from 'react-icons/bi'
 
 const AccordionItem = ({ id, title, subtitle, date, description, expanded, setExpanded}) => {
   const isOpen = id === expanded;
@@ -11,7 +11,7 @@ const AccordionItem = ({ id, title, subtitle, date, description, expanded, setEx
     <>
       <motion.header
         initial={true}
-        animate={{ backgroundColor: isOpen ? "white" : "black", color: isOpen ? "black" : "white", borderColor: isOpen ? "black" : "white" }}
+        animate={{ backgroundColor: isOpen ? "#334155" : "#334155", color: isOpen ? "#818cf8" : "white", borderColor: isOpen ? "#818cf8" : "white" }}
         onClick={() => setExpanded(isOpen ? false : id)}
         className="h-12 flex items-center justify-center border border-x-0 border-t-0 text-white text-3xl cursor-pointer transition-colors duration-200"
         transition={{ duration: 0.8}}
@@ -53,9 +53,6 @@ const AccordionItem = ({ id, title, subtitle, date, description, expanded, setEx
                   
                   <li className="text-xl leading-relaxed"> - {item}</li>
                 ))}
-                {/* <li className="text-xl leading-relaxed"> - Scraped over 100 websites and bypassed bot detection to gather data on potential leads for a client</li>
-                <li className="text-xl leading-relaxed"> - Developed a web application using React and Node.js to display the data gathered from the web scraper</li>
-                <li className="text-xl leading-relaxed"> - Created a REST API using Node.js and Express to handle requests from the web application</li> */}
 
               </ul>
             </div>
@@ -67,8 +64,6 @@ const AccordionItem = ({ id, title, subtitle, date, description, expanded, setEx
 };
 
 export default function Accordion({ experiences }) {
-  // This approach is if you only want max one section open at a time. If you want multiple
-  // sections to potentially be open simultaneously, they can all be given their own `useState`.
   const [expanded, setExpanded] = useState(-1);
   const accordionIds = [0, 1, 2, 3];
 

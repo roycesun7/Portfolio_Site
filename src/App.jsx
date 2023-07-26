@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx'
 import Experience from './pages/Experience.jsx'
 import Projects from './pages/Projects.jsx'
 import Contact from './pages/Contact.jsx'
+import Sidebar from './components/Sidebar';
 
 
 function App() {
@@ -28,8 +29,11 @@ function App() {
 
   return (
     <>
+
     <div className='grid grid-cols-5'>
-      
+
+      {/* Left sidebar */}
+    <Sidebar />
 
       <div className='col-span-4 relative' ref={myRef}>
         {animationActive && <ClearAnimation />}
