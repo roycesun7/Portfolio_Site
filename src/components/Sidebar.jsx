@@ -7,8 +7,8 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`fixed inset-y-1/3 left-0 bg-gray-800 h-1/4 flex flex-col items-center justify-center z-50 transition-all rounded-r-lg`}
-      style={{ width: isHovered ? '4%' : '0%', transition: 'width 0.15s ease-in',} } // Change the width as needed
+      className={`fixed inset-y-1/3 left-0 bg-slate-900 h-1/4 flex flex-col items-center justify-center z-50 transition-all rounded-r-lg`}
+      style={{ width: isHovered ? '4%' : '0%', transition: 'width 0.15s ease-in',} }
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -19,7 +19,7 @@ const Sidebar = () => {
             href="https://github.com/roycesun7"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2 hover:text-indigo-400"
+            className="flex items-center space-x-2 text-indigo-400 hover:text-teal-200"
           >
             <FiGithub className="text-4xl" />
           </a>
@@ -27,19 +27,19 @@ const Sidebar = () => {
             href="https://www.linkedin.com/in/royce-sun/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center space-x-2 hover:text-indigo-400"
+            className="flex items-center space-x-2 text-indigo-400 hover:text-teal-200"
           >
             <FiLinkedin className="text-4xl" />
           </a>
           <a
             href="mailto:roycesun@sas.upenn.edu"
-            className="flex items-center space-x-2 hover:text-indigo-400"
+            className="flex items-center space-x-2 text-indigo-400 hover:text-teal-200"
           >
             <FiMail className="text-4xl" />
           </a>
         </div>
       ) : (
-        <div className="w-8 h-64 bg-gray-800 rounded-r-lg relative">
+        <div className="w-8 h-64 bg-slate-900 rounded-r-lg relative">
             <div className="absolute top-1/2 right-0 transform text-indigo-400 text-2xl mr-0"
             style={{
                 transitionProperty: 'transform',

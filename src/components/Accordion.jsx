@@ -11,7 +11,7 @@ const AccordionItem = ({ id, title, subtitle, date, description, expanded, setEx
     <>
       <motion.header
         initial={true}
-        animate={{ backgroundColor: isOpen ? "#334155" : "#334155", color: isOpen ? "#818cf8" : "white", borderColor: isOpen ? "#818cf8" : "white" }}
+        animate={{ backgroundColor: isOpen ? "#1e293b" : "#1e293b", color: isOpen ? "#818cf8" : "white", borderColor: isOpen ? "#818cf8" : "white" }}
         onClick={() => setExpanded(isOpen ? false : id)}
         className="h-12 flex items-center justify-center border border-x-0 border-t-0 text-white text-3xl cursor-pointer transition-colors duration-200"
         transition={{ duration: 0.8}}

@@ -5,7 +5,7 @@ import Home from './pages/Home.jsx'
 import Experience from './pages/Experience.jsx'
 import Projects from './pages/Projects.jsx'
 import Contact from './pages/Contact.jsx'
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/Sidebar.jsx'
 
 
 function App() {
@@ -27,15 +27,15 @@ function App() {
 
   const myRef = useRef(null);
 
+
   return (
     <>
 
     <div className='grid grid-cols-5'>
-
-      {/* Left sidebar */}
-    <Sidebar />
+      <Sidebar />
 
       <div className='col-span-4 relative' ref={myRef}>
+
         {animationActive && <ClearAnimation />}
 
         {(() => {
@@ -45,13 +45,15 @@ function App() {
           case 1:
             return <Experience />
           case 2:
-            return <Skills />
+            return <Projects />
           case 3:
             return <Projects />
           case 4:
             return <Contact />
         }})()}
+        
       </div>
+      
       {/* <div className="" > */}
       <Navbar page={page} handleClick={handlePageChange}/>
       {/* </div> */}

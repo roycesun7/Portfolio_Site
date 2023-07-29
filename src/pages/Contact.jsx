@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Contact() {
   return (
 
-    <div className="h-screen bg-slate-700 relative w-screen pt-20">
+    <div className="h-screen bg-slate-800 relative w-screen pt-20">
       <div className="flex flex-col h-3/5 justify-center">
         <div className="flex flex-col items-center space-y-4">
 
@@ -16,7 +16,7 @@ export default function Contact() {
 
         <div className="flex justify-center text-center">
         <p className="text-white text-lg max-w-3xl px-4">
-          Feel free to reach out to me through any of the contact points linked below!
+          Feel free to reach out to me through any of the contact points linked below:
         </p>
       </div>
 
@@ -36,7 +36,7 @@ export default function Contact() {
           </motion.div>
 
           <motion.div
-            className="flex items-center p-4 bg-white rounded-lg"
+            className="flex items-center p-4 bg-teal-200 rounded-lg"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.75 }}
@@ -49,7 +49,7 @@ export default function Contact() {
           </motion.div>
 
           <motion.div
-            className="flex items-center p-4 bg-white rounded-lg"
+            className="flex items-center p-4 bg-teal-200 rounded-lg"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 1 }}
@@ -62,13 +62,13 @@ export default function Contact() {
           </motion.div>
 
           <motion.div
-            className="flex items-center p-4 bg-slate-600 rounded-lg"
+            className="flex items-center p-4 bg-teal-200 rounded-lg"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 1.25 }}
           >
-            <AiFillMail className="text-white text-4xl me-3" />
-            <a className="group text-white text-2xl cursor-pointer transition-all duration-500" href="mailto:roycesun7@gmail.com">
+            <AiFillMail className="text-slate-700 text-4xl me-3" />
+            <a className="group text-slate-700 text-2xl cursor-pointer transition-all duration-500" href="mailto:roycesun7@gmail.com">
               roycesun7@gmail.com
               <span className="block max-w-0 ms-[50%] group-hover:ms-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-slate-700"></span>
             </a>

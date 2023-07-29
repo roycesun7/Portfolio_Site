@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 export default function Navbar(props) {
   return (
-    <nav className="bg-sky-950 fixed top-0 left-0 right-0 h-20 text-white">
+    <nav className="bg-slate-800 fixed top-0 left-0 right-0 h-20 text-slate-200">
       <div className="container mx-auto flex items-center justify-between h-full">
         {/* Left side - Your Name */}
-        <div className="font-mono text-4xl font-bold pl-3">
+        <div className="font-mono text-4xl font-bold pl-3 ">
           ROYCE SUN
         </div>
 
@@ -19,7 +19,7 @@ export default function Navbar(props) {
           {/* Resume Link */}
           {/* Resume Link with Hover Animation */}
           <motion.a
-            className="text-xl font-mono cursor-pointer py-4 px-8 border border-white rounded-lg hover:border-indigo-400 text-white"
+            className="text-xl font-mono cursor-pointer py-4 px-8 border border-stone-200 rounded-lg hover:border-indigo-300 hover:text-indigo-300 text-stone-200"
             href="https://www.google.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -39,9 +39,9 @@ export default function Navbar(props) {
 function NavItem(props) {
   let styling = "text-xl font-medium cursor-pointer py-4 px-8 border-b-4 border-transparent";
   if (props.keyVal === props.currentPage) {
-    styling += " border-indigo-400 text-indigo-400";
+    styling += " border-indigo-300 text-indigo-300";
   } else {
-    styling += " hover:border-indigo-400 hover:text-indigo-400";
+    styling += " hover:border-indigo-300 hover:text-indigo-300";
   }
 
   return (
