@@ -6,10 +6,8 @@ const projects = [
   {
     id: 1,
     title: "Crash Detection",
-    description: ["Selected as one of 35 to compete and placed top 5 in Point72’s inaugural datathon based on holistic achievement and potential for success in programming + data analytics/solutions ",
-  "Compiled, analyzed, and visualized feature information from multiple NYC borough datasets using Python data libraries",
-"Analyzed processed data and insights by EDA + utilized gradient boosting machine learning to predict crash danger by borough area with longitude/latitude location groups"],
-    url: "https://example.com/project1",
+    description: ["Selected as one of 35 to compete and placed top 5 in Point72’s inaugural datathon based on holistic achievement and potential for success in programming + data analytics/solutions"],
+    url: "https://github.com/roycesun7/data-projects/blob/main/crash-detection.ipynb",
     image: "https://i.imgur.com/8Z1zZ1I.png",
     imagePosition: "left",
   },
@@ -62,8 +60,9 @@ export default function Projects() {
   return (
     <div className="min-h-screen bg-slate-800 relative w-screen pt-20 overflow-y-auto">
       <div className="justify-center flex">
-        <h1 className="text-white text-center text-7xl py-5 px-7 rounded-br-xl">Project Gallery</h1>
+        <h1 className="text-slate-300 text-center text-7xl py-5 px-7 rounded-br-xl">Project Gallery</h1>
       </div>
+
 
         {/* Map through the projects array and render each project */}
         {projects.map((project) => (

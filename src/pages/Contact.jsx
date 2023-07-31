@@ -10,12 +10,12 @@ export default function Contact() {
 
         <div style={{ margin: "20px" }}></div>
 
-        <h1 className="text-white text-7xl text-center mb-6 pt-20">Get in Touch</h1>
+        <h1 className="text-slate-300 text-7xl text-center mb-6 pt-20">Get in Touch</h1>
 
         <div style={{ margin: "14px" }}></div>
 
         <div className="flex justify-center text-center">
-        <p className="text-white text-lg max-w-3xl px-4">
+        <p className="text-slate-300 text-lg max-w-3xl px-4">
           Feel free to reach out to me through any of the contact points linked below:
         </p>
       </div>

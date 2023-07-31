@@ -5,7 +5,7 @@ export default function Navbar(props) {
   return (
     <nav className="bg-slate-800 fixed top-0 left-0 right-0 h-20 text-slate-200">
       <div className="container mx-auto flex items-center justify-between h-full">
-        {/* Left side - Your Name */}
+        {/* Left side  */}
         <div className="font-mono text-4xl font-bold pl-3 ">
           ROYCE SUN
         </div>
@@ -20,7 +20,7 @@ export default function Navbar(props) {
           {/* Resume Link with Hover Animation */}
           <motion.a
             className="text-xl font-mono cursor-pointer py-4 px-8 border border-stone-200 rounded-lg hover:border-indigo-300 hover:text-indigo-300 text-stone-200"
-            href="https://www.google.com"
+            href="https://drive.google.com/file/d/1pNg7y76ex9Ybzati5BkxwADTd1bqk5Xd/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 0.95, y: 0}}

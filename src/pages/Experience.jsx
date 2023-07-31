@@ -66,6 +66,8 @@ export default function Experience() {
     return (
       <div className="h-screen bg-slate-800 relative w-screen pt-20">
       <div className="flex justify-center mt-10">
+
+
         <motion.div
           className="w-4/5"
           initial={{ opacity: 0, x: -100 }}

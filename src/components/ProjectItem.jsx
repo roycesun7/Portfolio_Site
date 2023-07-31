@@ -86,3 +86,4 @@ const ProjectItem = ({ title, description, url, image, imagePosition }) => {
 };
 
 export default ProjectItem;
+
