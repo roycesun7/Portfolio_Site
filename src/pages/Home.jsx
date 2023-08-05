@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 
 const projectContainerStyles = {
-  width: '50%', 
+  width: '52%', 
   margin: '0 auto', 
 };
 
