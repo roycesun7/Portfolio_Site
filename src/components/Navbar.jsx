@@ -6,8 +6,13 @@ export default function Navbar(props) {
     <nav className="bg-slate-800 fixed top-0 left-0 right-0 h-20 text-slate-200">
       <div className="container mx-auto flex items-center justify-between h-full">
         {/* Left side  */}
-        <div className="font-mono text-4xl font-bold pl-3 ">
-          ROYCE SUN
+        <div className="pl-0">
+        <img
+            src="/Logo.png"
+            alt="Logo"
+            className="w-auto ml-0 justify-start"
+            style={{ height: '55px' }} // Set the desired height for the logo using inline style
+          />
         </div>
 
         {/* Right side - Navigation Links */}

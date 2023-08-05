@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from "framer-motion";
 
 const projectContainerStyles = {
-  width: '55%', // Set the container width to 75% of the screen
-  margin: '0 auto', // Center the container horizontally
+  width: '50%', 
+  margin: '0 auto', 
 };
 
 const Home = () => {
@@ -32,8 +32,8 @@ const Home = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: .75 }}
         >
-          <h2 className="text-slate-500 text-4xl leading-tight text-right">Computer Science and Economics</h2>
-          <h2 className="text-slate-500 text-4xl leading-tight text-right">University of Pennsylvania</h2>
+          <h2 className="text-indigo-200 text-4xl leading-tight text-right">Computer Science and Economics</h2>
+          <h2 className="text-indigo-200 text-4xl leading-tight text-right">University of Pennsylvania</h2>
         </motion.div>
       </div>
 

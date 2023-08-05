@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectItem = ({ title, description, url, image, imagePosition }) => {
+const ProjectItem = ({ title, description, url, image, imagePosition, icons }) => {
   const imageOnLeft = imagePosition === 'left';
   const imageOnRight = imagePosition === 'right';
 
@@ -8,7 +8,6 @@ const ProjectItem = ({ title, description, url, image, imagePosition }) => {
     width: '80%', // Set the container width to 75% of the screen
     margin: '0 auto', // Center the container horizontally
   };
-
 
   const projectCardStyles = {
     backgroundColor: '#023868',
@@ -19,11 +18,6 @@ const ProjectItem = ({ title, description, url, image, imagePosition }) => {
     transition: '0.2s',
   };
 
-  const titleRowStyles = {
-    display: 'flex',
-    marginTop: '0.2em',
-  };
-
   const projectTitleStyles = {
     margin: '0',
   };
@@ -32,30 +26,20 @@ const ProjectItem = ({ title, description, url, image, imagePosition }) => {
     marginLeft: '1em',
   };
 
-  const projectIconStyles = {
-    width: '1.7em',
-    height: '1.7em',
-    marginRight: '0.5em',
-  };
-
   const projectImgStyles = {
     borderRadius: '10px',
-    width: '100%',
-    filter: 'brightness(0.8)',
-    transition: '0.2s',
-  };
-
-  const projectImgHoverStyles = {
-    filter: 'brightness(1)',
-    transition: '0.2s',
+    width: '100%', // Standardize the image width
+    height: '200px', // Set the image height
   };
 
   return (
-    <div style={projectContainerStyles}> 
+    <div style={projectContainerStyles}>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
         {imageOnLeft && (
-          <div style={{ width: '100%', flex: '1 1 50%', order: '1', marginBottom: '1rem' }}>
-            <img src={image} alt={title} style={{ width: '100%', height: 'auto' }} />
+          <div style={{ width: '100%', flex: '1 1 50%', order: '2', marginBottom: '1rem' }}>
+            <div style={{ position: 'relative' }}>
+              <img src={image} alt={title} style={{ ...projectImgStyles, width: '100%', height: 'auto' }} />
+            </div>
           </div>
         )}
 
@@ -68,16 +52,14 @@ const ProjectItem = ({ title, description, url, image, imagePosition }) => {
               <p key={index}>{line}</p>
             ))}
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <a style={{ fontSize: '1.125rem', textAlign: 'center', textDecoration: 'underline', ...projectLinkStyles }} href={url} target="_blank" rel="noopener noreferrer">
-              Learn more
-            </a>
-          </div>
+          {icons && <div>{icons}</div>}
         </div>
 
         {imageOnRight && (
-          <div style={{ width: '100%', flex: '1 1 50%', order: '3', marginBottom: '1rem' }}>
-            <img src={image} alt={title} style={{ width: '100%', height: 'auto' }} />
+          <div style={{ width: '100%', flex: '1 1 50%', order: '1', marginBottom: '1rem' }}>
+            <div style={{ position: 'relative' }}>
+              <img src={image} alt={title} style={{ ...projectImgStyles, width: '100%', height: 'auto' }} />
+            </div>
           </div>
         )}
       </div>
@@ -86,4 +68,3 @@ const ProjectItem = ({ title, description, url, image, imagePosition }) => {
 };
 
 export default ProjectItem;
-
