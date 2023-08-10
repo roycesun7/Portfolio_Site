@@ -11,21 +11,19 @@ export default function Navbar(props) {
             src="/Logo.png"
             alt="Logo"
             className="w-auto ml-0 justify-start"
-            style={{ height: '55px' }} // Set the desired height for the logo using inline style
+            style={{ height: '55px' }} 
           />
         </div>
 
-        {/* Right side - Navigation Links */}
         <div className="font-mono flex items justify-items-end space-x-3 pr-0 ml-auto">
           <NavItem currentPage={props.page} keyVal={0} handleClick={props.handleClick}>Home</NavItem>
           <NavItem currentPage={props.page} keyVal={1} handleClick={props.handleClick}>Experience</NavItem>
           <NavItem currentPage={props.page} keyVal={3} handleClick={props.handleClick}>Projects</NavItem>
           <NavItem currentPage={props.page} keyVal={4} handleClick={props.handleClick}>Contact</NavItem>
-          {/* Resume Link */}
-          {/* Resume Link with Hover Animation */}
+
           <motion.a
             className="text-xl font-mono cursor-pointer py-4 px-8 border border-stone-200 rounded-lg hover:border-indigo-300 hover:text-indigo-300 text-stone-200"
-            href="https://drive.google.com/file/d/1pNg7y76ex9Ybzati5BkxwADTd1bqk5Xd/view?usp=sharing"
+            href="https://drive.google.com/file/d/1dLeNaC6QKPB5zAbYqiHssq347bXgTL0_/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 0.95, y: 0}}

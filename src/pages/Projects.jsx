@@ -2,7 +2,7 @@ import React from "react";
 import ProjectItem from "../components/ProjectItem";
 import { FiGithub, FiLinkedin, FiMail} from 'react-icons/fi';
 import {FaPython, FaReact} from 'react-icons/fa';
-import {SiSquare, SiTailwindcss, SiJupyter, SiBootstrap, SiJquery, SiHtml5, SiPandas, SiNumpy, SiRstudio, SiPlotly, SiVite, SiScikitlearn} from 'react-icons/si';
+import {SiSquare, SiTailwindcss, SiJupyter, SiBootstrap, SiJquery, SiHtml5, SiPandas, SiNumpy, SiRstudio, SiPlotly, SiVite, SiScikitlearn, SiCss3, SiJavascript} from 'react-icons/si';
 import {TbBrandZoom} from 'react-icons/tb';
 
 
@@ -34,11 +34,10 @@ const projects = [
     url2: "https://benoy515.github.io/Rubi/",
     image: "/Rubi.png",
     icons: [
-      <FiGithub/>,
-      <FiLinkedin/>,
       <SiBootstrap/>,
       <SiJquery/>,
-      <SiHtml5/>,
+      <SiJavascript/>,  
+      <SiCss3/>,
     ],
   },
 

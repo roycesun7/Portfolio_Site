@@ -11,15 +11,15 @@ export default function Experience() {
         date: "May 2023 - August 2023",
         description: [
           "Implemented Microsoft’s Presidio SDK together with GPT-3 to autonomously analyze and anonymize personal identifiable information (PII) to protect client data",
-          "Managed firm's machine learning repository and contributed 500+ high-quality topic-based images for model training data by leveraging search engine scraping methodologies and data version control for Git (dvc)",
-          "Led ML dev team in designing efficient and scalable web scraping program (Python) to help firm train machine learning model for data categorization in privacy"
+          "Managed firm’s machine learning data repository and contributed 1000+ high-quality topic-based images for model training by leveraging Python search engine scraping methodologies & data version control for Git (dvc)",
+          "Led ML dev team in designing efficient and scalable integration testing for model version updates, implemented Slackbot functionality to help firm train machine learning model for data categorization in privacy"
         ]
       },
 
       {
         id: 1,
         title: "Pallacanestro Trieste",
-        subtitle: "Data Analytics Consultant",
+        subtitle: "Data Analyst",
         date: "June 2023 - August 2023",
         description: [
           "Leveraged data tools in Python to scrape, merge, and analyze LBA player data for Italian professional basketball team Trieste",
@@ -32,7 +32,7 @@ export default function Experience() {
         id: 2,
         title: "Linguistics Data Consortium",
         subtitle: "Analyst",
-        date: "December 2022 - Present",
+        date: "January 2023 - Present",
         description: [
           "Quantitatively analyzed speech patterns of patients with neurodegenerative disorders for a biomedical research initiative",
           "Utilized transcription software to combine/transcribe high-volume audio files and analyze case patient data "
@@ -45,8 +45,8 @@ export default function Experience() {
         subtitle: "Director of Web Operations",
         date: "August 2022 - August 2022",
         description: [
-          "Managed the official website, implementing periodic updates to layout, coloring, and digital design based on outreach objective",
-          "Collaborated with a diverse team of college students as technical lead to publish international outreach efforts, fostering global health education and awareness"
+          "– Managed official website, implementing periodic updates to layout, coloring, and digital design based on outreach objective",
+          "Facilitated communication and outreach with various organizations, raised 3k+ in sponsorship funding and attracted 10+ large scale clients"
         ]
       },
 
