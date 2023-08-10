@@ -6,7 +6,8 @@ const projects = [
   {
     id: 1,
     title: "Crash Detection",
-    description: ["Selected as one of 35 to compete and placed top 5 in Point72’s inaugural datathon based on holistic achievement and potential for success in programming + data analytics/solutions"],
+    description: ["- Compiled, analyzed, and visualized feature information from multiple NYC borough datasets",
+    "- Analyzed processed data and insights by EDA, predicted crash danger by borough area"],
     url: "https://github.com/roycesun7/data-projects/blob/main/crash-detection.ipynb",
     image: "/vehicle.png",
     imagePosition: "left",
@@ -15,8 +16,8 @@ const projects = [
   {
     id: 2,
     title: "Tumor Classification",
-    description: ["Authored individual research paper on tumor malignancy classification based on 9 million+ patients and 70+ features", 
-  " Produced data-driven conclusions w/ inferential statistics model by compiling, analyzing, and visualizing data with R, trained logistic regression machine learning model in Python"],
+    description: ["- Authored individual research paper on tumor malignancy classification based on 9 million+ patients and 70+ features", 
+  "- Produced data-driven conclusions by compiling, analyzing, and visualizing data"],
     url: "https://drive.google.com/file/d/1V8RwfApH2Xi4wmXkyZuxeLB9lmvdklou/view?usp=sharing",
     image: "https://www.dicomdirector.com/wp-content/uploads/2022/03/wire-frame-image-human-body-2120x1060.jpg",
     imagePosition: "right",
@@ -25,8 +26,8 @@ const projects = [
   {
     id: 3,
     title: "Rubi",
-    description: ["Designed a website to connect charitable organizations to restaurants to claim extra food at the end of the day",
-    "Built using HTML/CSS/JS in conjunction with Bootstrap and JQuery and won third overall at MontyHacks V"],
+    description: ["- Designed a website to connect charitable organizations to restaurants to claim extra food at the end of the day",
+    "- Built using HTML/CSS/JS in conjunction with Bootstrap and JQuery"],
     url: "https://benoy515.github.io/Rubi/",
     image: "/Rubi.png",
     imagePosition: "left",
@@ -35,8 +36,8 @@ const projects = [
   {
     id: 4,
     title: "Rocket Website",
-    description: ["Built website concept for Montgomery Rocketry Team",
-    "created with React and TailwindCSS"], 
+    description: ["- Built website concept for Montgomery Rocketry Team",
+    "- Created with React and TailwindCSS"], 
     url: "https://example.com/project2",
     image: "/rocketsite.png",
     imagePosition: "left",
