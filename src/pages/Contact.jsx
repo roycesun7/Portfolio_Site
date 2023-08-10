@@ -10,7 +10,7 @@ export default function Contact() {
 
         <div style={{ margin: "20px" }}></div>
 
-        <h1 className="text-slate-300 text-7xl text-center mb-6 pt-20">Get in Touch</h1>
+        <h1 className="text-slate-300 text-7xl text-center mb-7 pt-24 mt-5">Get in Touch</h1>
 
         <div style={{ margin: "14px" }}></div>
 
