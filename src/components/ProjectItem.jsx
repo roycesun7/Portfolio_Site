@@ -23,6 +23,7 @@ const ProjectItem = ({ title, description, url, url2, image, icons }) => {
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: '0.5rem',
+    color: '#f1f5f9'
   };
 
   const linkButtonStyles = {
@@ -41,9 +42,6 @@ const ProjectItem = ({ title, description, url, url2, image, icons }) => {
     fontSize: '1.5rem',
     margin: '0 0.75rem',
     color: '#a5b4fc',
-    "&:hover": {
-      color: '#99f6e4', 
-    }
   };
 
   const projectImgStyles = {
@@ -86,7 +84,7 @@ const ProjectItem = ({ title, description, url, url2, image, icons }) => {
             </div>
           </div>
 
-          <div style={{ fontSize: '1.125rem', marginBottom: '1rem' }}>
+          <div style={{ fontSize: '1.125rem', marginBottom: '1rem', color: '#e2e8f0'}}>
             {description.map((line, index) => (
               <p key={index}>{line}</p>
             ))}
