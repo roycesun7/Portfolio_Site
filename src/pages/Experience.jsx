@@ -45,7 +45,7 @@ export default function Experience() {
         subtitle: "Director of Web Operations",
         date: "August 2022 - August 2022",
         description: [
-          "– Managed official website, implementing periodic updates to layout, coloring, and digital design based on outreach objective",
+          "Managed official website, implementing periodic updates to layout, coloring, and digital design based on outreach objective",
           "Facilitated communication and outreach with various organizations, raised 3k+ in sponsorship funding and attracted 10+ large scale clients"
         ]
       },
