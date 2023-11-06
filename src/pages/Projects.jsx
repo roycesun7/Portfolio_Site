@@ -14,7 +14,6 @@ const projects = [
     title: "Tumor Classification",
     description: ["- Authored individual research paper on tumor malignancy classification based on 9 million+ patients and 70+ features", 
   "- Produced data-driven conclusions by compiling, analyzing, and visualizing data"],
-    url: "https://github.com/roycesun7/data-projects/blob/main/tumor-classification-visualization.R",
     url2: "https://drive.google.com/file/d/1V8RwfApH2Xi4wmXkyZuxeLB9lmvdklou/view?usp=sharing",
     image: "https://www.dicomdirector.com/wp-content/uploads/2022/03/wire-frame-image-human-body-2120x1060.jpg",
     icons: [
