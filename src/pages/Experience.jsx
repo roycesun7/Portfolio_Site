@@ -6,8 +6,18 @@ export default function Experience() {
     let experiences = [
       {
         id: 0,
+        title: "OpsArmy",
+        subtitle: "Software Engineering Intern",
+        date: "Jan 2024 - May 2024",
+        description: [
+          "In progress..."
+        ]
+      },
+
+      {
+        id: 1,
         title: "LightBeam.ai",
-        subtitle: "AI/ML Engineer - Internship",
+        subtitle: "Software Engineering Intern",
         date: "May 2023 - August 2023",
         description: [
           "Implemented Microsoft’s Presidio SDK together with GPT-3 to autonomously analyze and anonymize personal identifiable information (PII) to protect client data",
@@ -17,8 +27,8 @@ export default function Experience() {
       },
 
       {
-        id: 1,
-        title: "Pallacanestro Trieste",
+        id: 2,
+        title: "Wharton Analytics Fellows",
         subtitle: "Data Analyst",
         date: "June 2023 - August 2023",
         description: [
@@ -29,7 +39,7 @@ export default function Experience() {
       },
 
       {
-        id: 2,
+        id: 3,
         title: "Linguistics Data Consortium",
         subtitle: "Analyst",
         date: "January 2023 - Present",
@@ -40,7 +50,7 @@ export default function Experience() {
       },
 
       {
-        id: 3,
+        id: 4,
         title: "Sierra Project Foundation",
         subtitle: "Director of Web Operations",
         date: "August 2022 - August 2022",
@@ -51,7 +61,7 @@ export default function Experience() {
       },
 
       {
-        id: 4,
+        id: 5,
         title: "IU School of Medicine",
         subtitle: "Computational Researcher",
         date: "June 2022 - January 2022",
