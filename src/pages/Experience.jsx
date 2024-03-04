@@ -7,10 +7,12 @@ export default function Experience() {
       {
         id: 0,
         title: "OpsArmy",
-        subtitle: "Software Engineering Intern",
-        date: "Jan 2024 - May 2024",
+        subtitle: "Technical Product Management Intern",
+        date: "Jan 2024 - March 2024",
         description: [
-          "In progress..."
+          "Spearheaded product spec, development, and MVP of a client web portal, enhancing engagement by 70% after introducing portal usage with performance tracking, interactive data display, and user feedback features", 
+          "Led design and execution of global compensation analysis tool to aggregate pay data, empowering strategic decision-making in talent acquisition by developing web scrapers in Python with libraries bs4 and Selenium", 
+          "Pioneered conception and market research outline for novel AI HR assistant, leveraging interview insights + performance metrics to create a multifaceted chatbot for talent prep, AI-powered leadership, and performance assessment"
         ]
       },
 
