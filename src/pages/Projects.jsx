@@ -8,9 +8,23 @@ import {TbBrandZoom} from 'react-icons/tb';
 
 const projects = [
 
-
   {
     id: 1,
+    title: "Square for Zoom",
+    description: ["- Zoom App integrating Square payment on demand in-meeting",
+    "- Built with Zoom Developer API, Square Payment Processing API, and Vite+React"], 
+    url: "https://github.com/roycesun7/ZoomPaymentProcessor",
+    image: "/SquareforZoom.png",
+    icons: [
+      <TbBrandZoom/>,
+      <SiSquare/>,
+      <FaReact/>,
+      <SiTailwindcss/>,
+    ],
+  },
+
+  {
+    id: 2,
     title: "Tumor Classification",
     description: ["- Authored individual research paper on tumor malignancy classification based on 9 million+ patients and 70+ features", 
   "- Produced data-driven conclusions by compiling, analyzing, and visualizing data"],
@@ -22,21 +36,6 @@ const projects = [
       <SiRstudio/>,
       <SiPandas/>,
       <SiNumpy/>,
-    ],
-  },
-
-  {
-    id: 2,
-    title: "Rubi",
-    description: ["- Designed a website to connect charitable organizations to restaurants to claim extra food at the end of the day",
-    "- Built using HTML/CSS/JS in conjunction with Bootstrap and JQuery"],
-    url2: "https://benoy515.github.io/Rubi/",
-    image: "/Rubi.png",
-    icons: [
-      <SiBootstrap/>,
-      <SiJquery/>,
-      <SiJavascript/>,  
-      <SiCss3/>,
     ],
   },
 
@@ -57,6 +56,21 @@ const projects = [
 
   {
     id: 4,
+    title: "Rubi",
+    description: ["- Designed a website to connect charitable organizations to restaurants to claim extra food at the end of the day",
+    "- Built using HTML/CSS/JS in conjunction with Bootstrap and JQuery"],
+    url2: "https://benoy515.github.io/Rubi/",
+    image: "/Rubi.png",
+    icons: [
+      <SiBootstrap/>,
+      <SiJquery/>,
+      <SiJavascript/>,  
+      <SiCss3/>,
+    ],
+  },
+
+  {
+    id: 5,
     title: "Rocket Website",
     description: ["- Built website concept for Montgomery Rocketry Team",
     "- Created with React and TailwindCSS"], 
@@ -69,22 +83,7 @@ const projects = [
       <SiHtml5/>,
 
     ],
-  },
-
-  {
-    id: 5,
-    title: "Square for Zoom",
-    description: ["- Zoom App integrating Square payment on demand in-meeting",
-    "- Built with Zoom Developer API, Square Payment Processing API, and Vite+React"], 
-    url: "https://github.com/roycesun7/ZoomPaymentProcessor",
-    image: "/SquareforZoom.png",
-    icons: [
-      <TbBrandZoom/>,
-      <SiSquare/>,
-      <FaReact/>,
-      <SiTailwindcss/>,
-    ],
-  },
+  }
 
 
 
