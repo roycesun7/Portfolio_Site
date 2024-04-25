@@ -23,7 +23,7 @@ export default function Navbar(props) {
 
           <motion.a
             className="text-xl font-mono cursor-pointer py-4 px-8 border border-stone-200 rounded-lg hover:border-indigo-300 hover:text-indigo-300 text-stone-200"
-            href="https://drive.google.com/file/d/1nGIqDpOpSsd5nvKdcAdr3IKXY6-Uup-m/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Ed0CiLPAqDj8EXbGLBnnMbiEuaoawgQz/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 0.95, y: 0}}
