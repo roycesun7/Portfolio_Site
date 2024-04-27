@@ -4,6 +4,7 @@ import { FiGithub, FiLinkedin, FiMail} from 'react-icons/fi';
 import {FaPython, FaReact} from 'react-icons/fa';
 import {SiSquare, SiTailwindcss, SiJupyter, SiBootstrap, SiJquery, SiHtml5, SiPandas, SiNumpy, SiRstudio, SiPlotly, SiVite, SiScikitlearn, SiCss3, SiJavascript} from 'react-icons/si';
 import {TbBrandZoom} from 'react-icons/tb';
+import {SiStyledcomponents, SiTypescript } from "react-icons/si";
 
 
 const projects = [
@@ -36,6 +37,22 @@ const projects = [
       <SiRstudio/>,
       <SiPandas/>,
       <SiNumpy/>,
+    ],
+  },
+
+  {
+    id: 2,
+    title: "Pet Gallery",
+    description: ["- React app that displays images of pets from a custom pet API", 
+  "- Made with React, Typescript, styled-components, and JSZip"],
+    url: "https://github.com/roycesun7/pet-image-site/tree/main/pet-gallery-frontend",
+    image: "https://hips.hearstapps.com/hmg-prod/images/low-maintenance-pets-hamsters-in-hand-1643914343.jpg?crop=1.00xw:0.750xh;0,0.0577xh&resize=1200:*",
+    icons: [
+      <SiTypescript/>,
+      <SiVite/>,
+      <FaReact/>,
+      <SiTailwindcss/>,
+      <SiStyledcomponents/>,
     ],
   },
 
