@@ -41,11 +41,12 @@ const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "Pet Gallery",
     description: ["- React app that displays images of pets from a custom pet API", 
   "- Made with React, Typescript, styled-components, and JSZip"],
-    url: "https://github.com/roycesun7/pet-image-site/tree/main/pet-gallery-frontend",
+    url: "https://github.com/roycesun7/pet-image-site/tree/main/pet-gallery",
+    url2: "https://pet-image-site.vercel.app/", 
     image: "https://hips.hearstapps.com/hmg-prod/images/low-maintenance-pets-hamsters-in-hand-1643914343.jpg?crop=1.00xw:0.750xh;0,0.0577xh&resize=1200:*",
     icons: [
       <SiTypescript/>,
@@ -53,21 +54,6 @@ const projects = [
       <FaReact/>,
       <SiTailwindcss/>,
       <SiStyledcomponents/>,
-    ],
-  },
-
-  {
-    id: 3,
-    title: "Crash Detection",
-    description: ["- Compiled, analyzed, and visualized feature information from multiple NYC borough datasets",
-    "- Analyzed processed data and insights by EDA, predicted crash danger by borough area"],
-    url: "https://github.com/roycesun7/data-projects/blob/main/crash-detection.ipynb",
-    image: "/vehicle.png",
-    icons: [
-      <FaPython/>,
-      <SiScikitlearn/>,
-      <SiPlotly/>,
-      <SiJupyter/>,
     ],
   },
 
@@ -88,10 +74,28 @@ const projects = [
 
   {
     id: 5,
+    title: "Crash Detection",
+    description: ["- Compiled, analyzed, and visualized feature information from multiple NYC borough datasets",
+    "- Analyzed processed data and insights by EDA, predicted crash danger by borough area"],
+    url: "https://github.com/roycesun7/data-projects/blob/main/crash-detection.ipynb",
+    image: "/vehicle.png",
+    icons: [
+      <FaPython/>,
+      <SiScikitlearn/>,
+      <SiPlotly/>,
+      <SiJupyter/>,
+    ],
+  },
+
+
+
+  {
+    id: 6,
     title: "Rocket Website",
     description: ["- Built website concept for Montgomery Rocketry Team",
     "- Created with React and TailwindCSS"], 
     url: "https://github.com/roycesun7/rocket-site",
+    url2: "https://rocket-site-beta.vercel.app/",
     image: "/rocketsite.png",
     icons: [
       <SiVite/>,
