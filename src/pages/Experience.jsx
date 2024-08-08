@@ -5,6 +5,17 @@ import Accordion from "../components/Accordion";
 export default function Experience() {
     let experiences = [
       {
+        id: 6,
+        title: "Pattern",
+        subtitle: "Software Engineering Intern",
+        date: "May 2024 - August 2024",
+        description: [
+          "Implemented custom scheduled and event-triggered table updates using Apache Airflow and ActiveRecord ORM, improving query response runtime by 30% and optimizing database storage by 15M rows", 
+          "Engineered algorithms to generate 5 new out-of-stock classifier metrics using SQL in Snowflake. Integrated derived insights/graphs into multipurpose dashboard using Next.js, improving total inventory in-stock rate by 55%", 
+          "Migrated purchase orders data display and filter capabilities from Tableau over to centralized internal software using React/Node and PostgreSQL, provisioning infrastructure on AWS with Terraform"
+        ]
+      },
+      {
         id: 0,
         title: "OpsArmy",
         subtitle: "Technical Product Management Intern",
@@ -31,7 +42,7 @@ export default function Experience() {
       {
         id: 2,
         title: "Wharton Analytics Fellows",
-        subtitle: "Data Analyst",
+        subtitle: "Data Science Intern",
         date: "June 2023 - August 2023",
         description: [
           "Leveraged data tools in Python to scrape, merge, and analyze LBA player data for Italian professional basketball team Trieste",
@@ -44,7 +55,7 @@ export default function Experience() {
         id: 3,
         title: "Linguistics Data Consortium",
         subtitle: "Analyst",
-        date: "January 2023 - Present",
+        date: "January 2023 - June 2023",
         description: [
           "Quantitatively analyzed speech patterns of patients with neurodegenerative disorders for a biomedical research initiative",
           "Utilized transcription software to combine/transcribe high-volume audio files and analyze case patient data "
