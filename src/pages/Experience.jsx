@@ -11,7 +11,7 @@ export default function Experience() {
         date: "May 2024 - August 2024",
         description: [
           "Implemented custom scheduled and event-triggered table updates using Apache Airflow and ActiveRecord ORM, improving query response runtime by 30% and optimizing database storage by 15M rows", 
-          "Engineered algorithms to generate 5 new out-of-stock classifier metrics using SQL in Snowflake. Integrated derived insights/graphs into multipurpose dashboard using Next.js, improving total inventory in-stock rate by 55%", 
+          "Engineered algorithms to generate 5 new out-of-stock classifier metrics using SQL in Snowflake. Integrated derived insights/visualizations into multipurpose dashboard, reducing total inventory out-of-stock rate by 55%", 
           "Migrated purchase orders data display and filter capabilities from Tableau over to centralized internal software using React/Node and PostgreSQL, provisioning infrastructure on AWS with Terraform"
         ]
       },
@@ -33,9 +33,9 @@ export default function Experience() {
         subtitle: "Software Engineering Intern",
         date: "May 2023 - August 2023",
         description: [
-          "Implemented Microsoft’s Presidio SDK together with GPT-3 to autonomously analyze and anonymize personal identifiable information (PII) to protect client data",
-          "Managed firm’s machine learning data repository and contributed 1000+ high-quality topic-based images for model training by leveraging Python search engine scraping methodologies & data version control for Git (dvc)",
-          "Led ML dev team in designing efficient and scalable integration testing for model version updates, implemented Slackbot functionality to help firm train machine learning model for data categorization in privacy"
+          "Maintained firm's ML data repository using Git and AWS S3. Doubled the size of model training database by leveraging multi-threaded search engine crawling & cloud data version control (dvc)",
+          "Designed scalable integration testing for model infrastructure updates, implemented Slackbot functionality to relay real-time errors in CI checks, reducing manual debugging time by 20%", 
+          "Implemented Microsoft’s Presidio SDK together with GPT-3 to autonomously analyze and anonymize personal identifiable information (PII) to protect client data"
         ]
       },
 
