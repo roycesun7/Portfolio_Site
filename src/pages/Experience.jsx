@@ -141,7 +141,7 @@ export default function Experience() {
             transition={{ duration: 0.5 }}
             className="text-center mb-12"
           >
-            <h1 className="text-4xl font-bold text-slate-200 mb-4">Experience</h1>
+            <h1 className="text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-100 via-indigo-400 to-indigo-600 text-center py-5 px-7 rounded-br-xl mb-7 mt-3">Experience</h1>
             <div className="flex justify-center space-x-4 mb-8">
               <button
                 onClick={() => setActiveTab('all')}

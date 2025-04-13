@@ -9,7 +9,7 @@ export default function Contact() {
 
         <div style={{ margin: "20px" }}></div>
 
-        <h1 className="text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-300 via-teal-400 to-teal-500 text-center mb-7 pt-24 mt-5">Get in Touch</h1>
+        <h1 className="text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-200 via-teal-300 to-teal-500 text-center mb-7 pt-24 mt-5">Get in Touch</h1>
 
         <div style={{ margin: "14px" }}></div>
 

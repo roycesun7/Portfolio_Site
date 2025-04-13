@@ -5,7 +5,7 @@ import {FaPython, FaReact} from 'react-icons/fa';
 import {SiSquare, SiTailwindcss, SiJupyter, SiBootstrap, SiJquery, SiHtml5, SiPandas, SiNumpy, SiRstudio, SiPlotly, SiVite, SiScikitlearn, SiCss3, SiJavascript} from 'react-icons/si';
 import {TbBrandZoom} from 'react-icons/tb';
 import {SiStyledcomponents, SiTypescript } from "react-icons/si";
-
+import { motion } from "framer-motion";
 
 const projects = [
 
@@ -113,24 +113,36 @@ const projects = [
 export default function Projects() {
   return (
     <div className="min-h-screen bg-slate-800 relative w-screen pt-20 overflow-y-auto">
-      <div className="justify-center flex">
-        <h1 className="text-slate-300 text-center text-7xl py-5 px-7 rounded-br-xl mb-7 mt-3">
+      <motion.div 
+        className="justify-center flex"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <h1 className="text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-100 via-indigo-400 to-indigo-500 text-center py-5 px-7 rounded-br-xl mb-7 mt-3">
           Project Gallery
         </h1>
-      </div>
+      </motion.div>
 
-      {/* Map through the projects array and render each project */}
-      {projects.map((project) => (
-        <ProjectItem
-          key={project.id}
-          title={project.title}
-          description={project.description}
-          url={project.url}
-          url2 = {project.url2}
-          image={project.image}
-          icons={project.icons}
-        />
-      ))}
+      <div className="space-y-8 pb-20">
+        {projects.map((project, index) => (
+          <motion.div
+            key={project.id}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: index * 0.1 }}
+          >
+            <ProjectItem
+              title={project.title}
+              description={project.description}
+              url={project.url}
+              url2={project.url2}
+              image={project.image}
+              icons={project.icons}
+            />
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 }
