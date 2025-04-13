@@ -47,9 +47,29 @@ export default function Experience() {
     const experiences = [
       {
         id: 6,
+        title: "Ramp",
+        subtitle: "Software Engineering Intern",
+        date: "May 2025 - Aug 2025",
+        type: "work",
+        description: [
+          "coming soon..."
+        ]
+      },
+      {
+        id: 6,
+        title: "Amazon",
+        subtitle: "Software Engineering Intern",
+        date: "Sep 2025 - Dec 2025",
+        type: "work",
+        description: [
+          "coming soon..."
+        ]
+      },
+      {
+        id: 6,
         title: "Pattern",
         subtitle: "Software Engineering Intern",
-        date: "May 2024 - August 2024",
+        date: "May 2024 - Aug 2024",
         type: "work",
         description: [
           "Implemented custom scheduled and event-triggered table updates using Apache Airflow and ActiveRecord ORM, improving query response runtime by 30% and optimizing database storage by 15M rows", 
@@ -73,7 +93,7 @@ export default function Experience() {
         id: 1,
         title: "LightBeam.ai",
         subtitle: "Software Engineering Intern",
-        date: "May 2023 - August 2023",
+        date: "May 2023 - Aug 2023",
         type: "work",
         description: [
           "Maintained firm's ML data repository using Git and AWS S3. Doubled the size of model training database by leveraging multi-threaded search engine crawling & cloud data version control (dvc)",
@@ -85,7 +105,7 @@ export default function Experience() {
         id: 2,
         title: "Wharton Analytics Fellows",
         subtitle: "Data Science Intern",
-        date: "June 2023 - August 2023",
+        date: "June 2023 - Aug 2023",
         type: "work",
         description: [
           "Leveraged data tools in Python to scrape, merge, and analyze LBA player data for Italian professional basketball team Trieste",
@@ -97,7 +117,7 @@ export default function Experience() {
         id: 3,
         title: "Linguistics Data Consortium",
         subtitle: "Analyst",
-        date: "January 2023 - June 2023",
+        date: "Jan 2023 - June 2023",
         type: "research",
         description: [
           "Quantitatively analyzed speech patterns of patients with neurodegenerative disorders for a biomedical research initiative",
@@ -108,7 +128,7 @@ export default function Experience() {
         id: 4,
         title: "Sierra Project Foundation",
         subtitle: "Director of Web Operations",
-        date: "August 2022 - August 2022",
+        date: "Aug 2022 - Aug 2023",
         type: "work",
         description: [
           "Managed official website, implementing periodic updates to layout, coloring, and digital design based on outreach objective",
@@ -119,7 +139,7 @@ export default function Experience() {
         id: 5,
         title: "IU School of Medicine",
         subtitle: "Computational Researcher",
-        date: "June 2022 - January 2022",
+        date: "June 2022 - Jan 2022",
         type: "research",
         description: [
           "Modified and implemented NLSAM algorithm in Python for image denoising of diffusion-weighted MRI multi-shell brain scans",
