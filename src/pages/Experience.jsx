@@ -46,7 +46,7 @@ export default function Experience() {
     
     const experiences = [
       {
-        id: 6,
+        id: 7,
         title: "Ramp",
         subtitle: "Software Engineering Intern",
         date: "May 2025 - Aug 2025",
@@ -56,7 +56,7 @@ export default function Experience() {
         ]
       },
       {
-        id: 6,
+        id: 8,
         title: "Amazon",
         subtitle: "Software Engineering Intern",
         date: "Sep 2025 - Dec 2025",
