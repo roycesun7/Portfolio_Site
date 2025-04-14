@@ -8,10 +8,23 @@ import Contact from './pages/Contact.jsx'
 import Sidebar from './components/Sidebar.jsx'
 import ThemeToggle from './components/ThemeToggle.jsx'
 import { ThemeProvider } from './context/ThemeContext'
+import { initGA, trackPageView } from './utils/analytics'
 
 function App() {
   const [page, setPage] = useState(0)
   const [animationActive, setAnimationActive] = useState(false)
+
+  // Initialize GA4
+  useEffect(() => {
+    initGA();
+    trackPageView(window.location.pathname);
+  }, []);
+
+  // Track page changes
+  useEffect(() => {
+    const pageNames = ['Home', 'Experience', 'Projects', 'Projects', 'Contact'];
+    trackPageView(`/${pageNames[page]}`);
+  }, [page]);
 
   const handlePageChange = (keyVal) => {
     setAnimationActive(true)
